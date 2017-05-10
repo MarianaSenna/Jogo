@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interagindo com o usuário</title>
+	<script type="text/javascript">
+				function olaSmile(){
+					var nomeUsuario = prompt("Qual seu nome?", "Digite aqui");
+					if(nomeUsuario){
+						alert('Prazer em conhecer você, '+nomeUsuario);
+						document.getElementById("idImgFeliz").src = "feliz.jpg"
+					}
+				}
+	</script>
+</head>
+<body onload="alert('Olá usuário, clique na imagem para fazer a interação!);">
+		<div style="margin-top:100px; text-align:center">
+		 		<img id="idImgFeliz" SRC="infeliz" onClick="olaSmile()" style="cursor:pointer"/>
+		</div>
+
+
+
+</body>
+</html>
